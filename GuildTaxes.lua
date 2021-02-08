@@ -730,7 +730,8 @@ function GuildTaxes:PLAYER_ENTERING_WORLD( ... )
 	self:UpdateGuildInfo()
 
 	-- Update guild roster
-	GuildRoster()
+	-- GuildRoster()
+	C_GuildInfo.GuildRoster()
 
 	-- Start queue iteration
 	C_Timer.After(QUEUE_ITERATION, self.QueueIteration)
